@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*************** Font & Text ***************/
+    font-family: "Inconsolata", sans-serif;
+    /*************** Effects ***************/
+    box-sizing: border-box;
+    background-color: #f5f3ec;
+}
+
+nav {
+    /*************** Box ***************/
+    width: 100%;
+    padding: 8px 15px;
+    /*************** position ***************/
+    position: fixed;
+    /*************** Color & Background ***************/
+    background-color: black;
+    /*************** Font & Text ***************/
+    text-align: center;
+    /*************** Effects ***************/
+    z-index: 1;
+}
+
+nav a {
+    /*************** Box ***************/
+    padding: 10px 0;
+    width: 325px;
+    /*************** Color & Background ***************/
+    color: white;
+    /*************** Font & Text ***************/
+    font-size: 15px;
+    text-decoration: none;
+    /*************** Effects ***************/
+    float: left;
+}
+
+nav a:hover {
+    /*************** Color & Background ***************/
+    background-color: #CCC;
+    color: black;
+}
+
+header {
+    /*************** Box ***************/
+    height: 75%;
+    padding: 16px 20px;
+    /*************** Color & Background ***************/
+    background-image: url("coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    /*************** Effects ***************/
+    filter: grayscale(50%);
+}
+
+header h1 {
+    /*************** Font & Text ***************/
+    font-weight: 100;
+    text-align: center;
+    font-size: 90px;
+    line-height: 130px;
+    /*************** position ***************/
+    position: absolute;
+    top: 22%;
+    left: 43%;
+    /*************** Color & Background ***************/
+    color: white;
+    /*************** Effects ***************/
+    display: block;
+    /*************** Box ***************/
+    width: min-content;
+}
+
+header b {
+    /*************** position ***************/
+    position: sticky;
+    top: 100%;
+    /*************** Color & Background ***************/
+    background-color: black;
+    color: white;
+    /*************** Font & Text ***************/
+    font-weight: 100;
+    font-size: 15px;
+    /*************** Box ***************/
+    padding: 3px 12px;
+}
+
+header p {
+    /*************** position ***************/
+    position: sticky;
+    left: 100%;
+    top: 100%;
+    /*************** Effects ***************/
+    display: inline-block;
+    /*************** Color & Background ***************/
+    color: white;
+    /*************** Font & Text ***************/
+    font-size: 15px;
+}
+
+.contents {
+    /*************** Box ***************/
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    filter: grayscale(80%);
+    margin-bottom: 50px;
+}
+
+.contents #about,
+.contents #menu,
+.contents #where {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.contents #about h5,
+.contents #where h5 {
+    /*************** Font & Text ***************/
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-size: 20px;
+    /*************** Box ***************/
+    width: max-content;
+    height: auto;
+    margin: 50px auto;
+    padding: 3px 12px;
+    /*************** Color & Background ***************/
+    background-color: black;
+    color: white;
+}
+
+.contents #about .about-paragraph-1,
+.contents #about .about-paragraph-2 {
+    /*************** Box ***************/
+    margin: 25px 0;
+    /*************** Effects ***************/
+    display: block;
+}
+
+.contents #about .quotation {
+    /*************** Color & Background ***************/
+    background-color: #f1f1f1 !important;
+    /*************** Box ***************/
+    border-left: 6px solid #ccc !important;
+    padding: 20px;
+}
+
+.contents #about .quotation p i {
+    /*************** Box ***************/
+    margin-bottom: 18px;
+    /*************** Effects ***************/
+    display: block;
+}
+
+.contents img {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.contents #menu .menu-header {
+    /*************** Font & Text ***************/
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-size: 20px;
+    /*************** Box ***************/
+    width: max-content;
+    height: auto;
+    margin: 50px auto;
+    padding: 3px 12px;
+    /*************** Color & Background ***************/
+    background-color: black;
+    color: white;
+}
+
+.contents #menu .menu-box {
+    /* padding: 10px 20px; */
+    box-shadow: 0px 2px 5px 0px lightgray, 0px 2px 10px 0px lightgray;
+}
+
+.contents #menu .menu-box .menu-box-header {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    padding: 10px 16px;
+    justify-content: space-around;
+    box-shadow: 0px 2px 5px 0px lightgray, 0px 2px 10px 0px lightgray;
+}
+
+.contents #menu .menu-box .menu-box-header .eat {
+    width: 100%;
+    cursor: pointer;
+}
+
+.contents #menu .menu-box .menu-box-header .active {
+    background-color: #616161;
+    color: #fff;
+}
+
+.contents #menu .menu-box .menu-box-header .drink {
+    width: 100%;
+    cursor: pointer;
+}
+
+.contents #menu .menu-box .eat-container,
+.contents #menu .menu-box .drink-container {
+    margin: 50px 0;
+}
+
+.contents #menu .menu-box .eat-container p,
+.contents #menu .menu-box .drink-container p {
+    color: #757575;
+    margin-top: 15px;
+}
+
+.contents #where .note {
+    margin-bottom: 25px;
+}
+
+.contents #where .note .note-1 {
+    margin-bottom: 25px;
+}
+
+.contents #where .note .note-1 span {
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 25px;
+    border: 1px solid #CCC;
+    padding: 0 5px;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+}
+
+form button {
+    background-color: black;
+    text-transform: uppercase;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #CCC;
+    color: black;
+}
